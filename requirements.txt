@@ -1,0 +1,8 @@
+flask
+torch
+transformers
+diffusers
+pandas
+scikit-learn
+gtts
+pyttsx3
