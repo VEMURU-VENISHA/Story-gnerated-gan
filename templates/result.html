@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Generated Story Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      text-align: center;
+      padding: 40px;
+    }
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    audio {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📖 Your Story Visualization</h1>
+  <p>{{ story }}</p>
+
+  {% for image in images %}
+    <img src="{{ image }}" alt="Generated Scene">
+  {% endfor %}
+
+  <h3>🎧 Listen to Your Story</h3>
+  <audio controls>
+    <source src="{{ audio }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <br><br>
+  <a href="/">⬅ Generate Another Story</a>
+</body>
+</html>
